@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+{% extends "app1/index.html" %}
+{% load static %}
+
+
+  <html lang="pt-BR">
+
+
+    {% block rodape %}
+       <body>
+               <head>
+                     <meta charset="UTF-8">
+                     <title>Registros de Acesso</title>
+                     <link rel="stylesheet" type="text/css" href="{% static "css/registros.css" %}"/>
+               </head>
+                    <h2>Aqui estão os Registros de Acesso:</h2>
+          <div class="djangtwo">
+                {% if lista_acessos %}
+                   <table>
+                      <thead>
+                             <th>Nome da Página</th>
+                             <th>Data de Acesso</th>
+                      </thead>
+
+                       {% for acesso in lista_acessos %}
+
+                             <tr>
+                                  <td>{{ acesso.pagina|upper }}</td>
+                                  <td>{{ acesso.data|date:"d F Y" }}</td>
+                             </tr>
+                       {% endfor %}
+                   </table>
+
+                {% else %}
+                         <p>Sem Registros. Tabela Não Criada.</p>
+                {% endif %}
+          </div>
+
+       </body>
+    {% endblock %}
+  </html>

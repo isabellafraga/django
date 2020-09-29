@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: "fonteNet";
+    src: url("fonts/net-font.ttf");
+}
+nav a {
+    font-size: 2em;
+    color: black;
+    font-family: fonteNet;
+    margin-left: 1em;
+    text-decoration: none !important;
+    color: initial !important;
+}
+nav img {
+    float: right;
+    height: 5vw;
+    margin-right: 1em;
+    margin-top: 0.3em;
+}
+.toda_pagina {
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    width: 100%;
+    height: 7vw;
+    line-height: 7vw;
+    background-color: seagreen;
+}
+.conteudo {
+    width: 100%;
+    height: 78vh;
+    position: relative;
+    z-index: 1;
+
+}
+.imagem-fundo {
+    position: absolute;
+     z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("imgs/django.jpg") center center;
+    background-repeat: no-repeat;
+    background-color: #edeef0;
+    width: 100%;
+    height: 100%;
+}
+.rodape {
+    width: 100%;
+    height: 8vh;
+    background-color: seagreen;
+
+}
+.rodape a {
+    color: black;
+    font-family: fonteNet;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 8vh;
+}
+p {
+    margin: 0;
+}
+

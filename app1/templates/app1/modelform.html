@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "app1/index.html" %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_filters %}
+{% load static %}
+
+  <html lang="pt-BR">
+
+      {% block rodape %}
+
+            <body>
+
+                  <div class="container">
+
+
+                          <head>
+                                <meta charset="UTF-8">
+                                <title>Formulário</title>
+                                 <link rel="stylesheet" type="text/css" href="{% static "css/modelform.css" %}"/>
+                          </head>
+
+                                        <h1> Vamos Preencher o Model Form </h1>
+
+                                        <form method="POST" class="grupo" action="">
+                                             {% csrf_token %}
+                                             {{ form|crispy }}
+                                        </form>
+                  </div>
+            </body>
+      {% endblock %}
+  </html>

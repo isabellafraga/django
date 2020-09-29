@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: "fonteNet";
+    src: url("fonts/net-font.ttf");
+}
+fieldset {
+    border: 0;
+}
+#cadastro{
+    padding: 5px ;
+    float: left;
+}
+
+body, input, select, textarea, datalist {
+    font-family: fonteNet;
+    font-size: 1em;
+}
+.button {
+    font-family: fonteNet;
+    font-size: 1em;
+    vertical-align: top;
+}
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 0.1em;
+}
+.campo label {
+    margin-bottom: 0.1em;
+    color: #363636;
+    display: block; 
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+   
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+   
+    
+}
+    input, textarea {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid #363636;
+        box-shadow: inset 2px 2px 2px #EEE;
+        font-size: 0.9em;
+        padding: 2px 5px;
+        }
+    
+textarea {
+     height: 50px;
+    }
+    
+.hint {
+    background-color: #FFFBE4;
+    border-radius: 3px;
+    border: 1px solid #363636;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    display: none;
+    font-size: 0.8em;
+    margin-left: 20px;
+    padding: 3px;
+    }
+    
+input:focus + .hint, textarea:focus + .hint {
+    display: inline-block;
+    }
+.error {
+    color: red;
+    display: none;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
+    } 
+  
+    * {
+        margin: 0;
+        padding: 0;
+    }
+#botaocad {
+    text-align: center;
+}

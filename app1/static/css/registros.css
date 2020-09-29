@@ -1,0 +1,31 @@
+body {
+    content: "";
+	background: url("imgs/verde.jpg");
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+    }
+h2 {
+    margin-top: 0.5em;
+    text-align: center;
+     font-family: "Century Gothic";
+    font-size: 1.2em;
+}
+.djangtwo {
+    font-size: 0.8em;
+    text-align: center !important;
+    margin-left: 480px;
+    font-family: "Century Gothic";
+}
+table {
+    text-align: center;
+	width: inherit;
+    
+}
+tr {
+    text-align: center;
+}
+

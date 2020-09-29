@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "fonteNet";
+    src: url("fonts/net-font.ttf");
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-family: Century Gothic;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+.grupo {
+    text-align: center;
+    color: black;
+    font-family: Century Gothic;
+    margin-top: 0;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-outside: 0;
+    font-size: 0.8em;
+}
+body {
+    content: "";
+	background: url("imgs/verde.jpg");
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+    }

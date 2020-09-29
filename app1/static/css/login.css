@@ -1,0 +1,84 @@
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+body {
+    content: "";
+	background: url("imgs/fundo.jpg");
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+    }
+.img {
+    content: "";
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+    }
+
+
+.conteiner {
+    margin: 0 auto;
+    width: 960px;
+         }
+
+  #visor {
+            height: 80px;
+            width: 320px;
+            background-color: mediumpurple;
+            padding: 10px;
+            border: 2px solid rebeccapurple;
+            margin-bottom: 25px;
+            transform: translate(90%, -5%);
+            margin-right: 25px;
+	        text-align: center;
+	        font-size: 2em;
+            border-radius: 10px;
+            font-family: "Century Gothic";
+          }
+
+  .teclado {
+            height: 410px;
+            width: 320px;
+            background-color: mediumpurple;
+            padding: 10px;
+            border: 2px solid rebeccapurple;
+            margin-bottom: 18px;
+            transform: translate(90.2%, -3%);
+            text-align: center;
+            border-radius: 10px;
+            font-family: "Century Gothic";
+}
+  table {
+	text-align: inherit;
+	width: inherit;
+}
+td {
+	text-align: center !important;
+}
+.button {
+    height: 60px;
+    width: 190px;
+    font-size: 100%;
+    margin-bottom: 10px;
+    transform: translate(0%, 25%);
+    border: 2px solid rebeccapurple;
+    font-size: 1.5em;
+    background-color: lightgray;
+    text-align: center !important;
+    border-radius: 10px;
+    font-family: "Century Gothic";
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+
+  <html lang="pt-BR">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Home</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"/>
+    </head>
+      <body>
+        {% block body %}
+          <div class="toda_pagina">
+            {% block toda-pagina %}
+            {% endblock %}
+              <div class="menu">
+                     <nav>
+                       <a href="{% url 'index' %}">Home</a>
+                       <a href="{% url 'app1:form' %}">Form</a>
+                       <a href="{% url 'app1:modelform' %}">Model Form</a>
+                       <a href="{% url 'app1:sp' %}">São Paulo</a>
+                       <a href="{% url 'app1:calc' %}">Calculadora</a>
+                       <a href="{% url 'app1:registros' %}">Registros de Acesso</a>
+                       <a href="{% url 'admin:index' %}">Django Admin</a>
+                       <a href="{% url 'app1:help' %}">Ajuda</a>
+                     </nav>
+                  {% block menu %}
+                  {% endblock %}
+              </div>
+               {% block conteudo %}
+
+                       <div class="conteudo">
+                          {% block rodape %}
+                             <div class="imagem-fundo">
+                              {% block imagem-fundo %}
+                              {% endblock %}
+                             </div>
+                          {% endblock %}
+                       </div>
+
+                   <footer class="footer mt-auto text-center fixed-bottom">
+                        <div class="rodape">
+                            <a>Desenvolvida por Isabella Fraga &copy; Copyright</a>
+                        </div>
+                   </footer>
+
+               {% endblock %}
+                           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+          </div>
+        {% endblock %}
+      </body>
+  </html>

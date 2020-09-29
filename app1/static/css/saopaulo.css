@@ -1,0 +1,95 @@
+body {
+    background-color: #C9BC8F !important;
+    }
+  img {
+    width: 150px;
+    height: 150px;
+    transform: translate(0%, -6%);
+    margin: 0;
+      }
+  h1 {
+     font-family:"Lucida Sans Unicode";
+      margin-top: 5px;
+     }
+    h1 a {
+        color: #7E9F19;
+        text-decoration: none !important;
+    }
+  h2 {
+       color:#000;
+       font-family: "Lucida Sans Unicode";
+       transform: translate(0%, -45%);
+     }
+  h4 {
+        color:#000;
+        font-family: "Lucida Sans Unicode";
+      }
+   p  {
+       font-family: "Lucida Sans Unicode";
+       font-size: 15.5px;
+       transform: translate(0%, -10%);
+       margin: 8px;
+     } 
+
+  .conteiner { 
+       margin: 0 auto;
+       width: 960px;
+      height: 1160px;
+            }
+  .Lugares {
+       height: 350px;
+       width: 960px;
+       background-color: #FFF;
+       padding: 10px;
+       border: 1px solid grey;
+       margin-bottom: 18px;
+           }
+           .Lugares h2 {
+               border-bottom: 1.2px dashed grey; 
+               transform: translate(0%, -5%);
+           }
+    .Menu {
+        padding: 10px;
+        background-color: #FFFBE4;
+        border: 1px solid #999;
+        font-family: "Lucida Sans Unicode";
+        transform: translate(0%, 1%);
+
+    }
+    .sidenote h4 {
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .sidenote ol  {
+        font-size: 8px;
+    }
+    .rodape1 p {
+        font-size: 11px;
+        text-align: center;
+        transform: translate(0%, -1%);
+    }
+    .rodape {
+    width: 100%;
+    height: 8vh;
+    background-color: seagreen;
+
+}
+.rodape p {
+    color: black;
+    font-family: fonteNet;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 5vh;
+    transform: translate(0%, 35%);
+}
+    ol {
+        counter-reset: section;
+        list-style-type: none;
+        font-size: 11px;
+      }
+      li::before {
+        counter-increment: section;
+        content: counters(section,".") ". ";
+      }
+
+ 

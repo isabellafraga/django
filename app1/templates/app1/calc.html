@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends "app1/index.html" %}
+{% load static %}
+
+ <html lang="pt-BR">
+
+
+   {% block rodape %}
+     <body>
+
+        <head>
+           <title>Calculadora</title>
+           <link rel="stylesheet" type="text/css" href="{% static "css/calculadora.css" %}">
+           <script src="{% static "js/calculo.js" %}"></script>
+        </head>
+
+       <div class="conteiner">
+
+
+              <p id="visor">0</p>           
+
+              <div class="teclado">
+
+                   <table style="width: 100%">
+                      <tr>
+
+                          <td><button class='button' onclick="btlimpar()">C</button></td>
+                          <td><button class='button' onclick="btponto()">.</button></td>
+                          <td><button class='button' id="divisao" onclick="operador(this.id)">/</button></td>
+
+                      </tr>
+
+                      <tr>
+                            <td> <button class='button' id="soma" onclick="operador(this.id)" >+</th></button></td>
+                            <td> <button class='button' id="subtracao" onclick="operador(this.id)" >-</button></td>
+                            <td> <button class='button' id="multiplicacao" onclick="operador(this.id)" >x</button></td>
+
+                      </tr>
+
+                      <tr>
+                            <td> <button class='button' id="b7" onclick="botnumero(this.id)" >7</button></td>
+                            <td> <button class='button' id="b8" onclick="botnumero(this.id)" >8</button></td>
+                            <td> <button class='button' id="b9" onclick="botnumero(this.id)" >9</button></td>
+
+                      </tr>
+
+                      <tr>
+                            <td> <button class='button' id="b4" onclick="botnumero(this.id)" >4</button></td>
+                            <td> <button class='button' id="b5" onclick="botnumero(this.id)" >5</button></td>
+                            <td> <button class='button' id="b6" onclick="botnumero(this.id)" >6</button></td>
+
+                      </tr>
+
+                      <tr>
+
+                           <td> <button class='button' id="b1" onclick="botnumero(this.id)" >1</button></td>
+                           <td> <button class='button' id="b2" onclick="botnumero(this.id)" >2</button></td>
+                           <td> <button class='button' id="b3" onclick="botnumero(this.id)" >3</button></td>
+  
+                      </tr>
+
+                      <tr>
+
+                          <td><button class='button' onclick="maisEmenos()">+/-</button></td>
+                          <td> <button class='button' id="b0" onclick="botnumero(this.id)" >0</button></td>
+                          <td><button class='button' onclick="resultado()">=</button></td>
+
+                      </tr>
+                   </table>
+
+              </div>
+             <div class="imagem"></div>
+       </div>
+
+
+     </body>
+   {% endblock %}
+ </html>

@@ -1,0 +1,80 @@
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+body {
+
+    }
+.imagem {
+    background: url("imgs/cal.jpg");
+    position: absolute;
+     z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+
+
+.conteiner { 
+    margin: 0 auto;
+    width: 860px;
+         }   
+
+          #visor {
+            height: 70px;
+            width: 320px;
+            background-color: rgb(136, 130, 130);
+
+              padding-bottom: 50px;
+              padding-right: 4px;
+            border: 3px solid black;
+            margin-bottom: 15px;
+            transform: translate(84%, 11%);
+            margin-right: 20px;
+	        text-align: right;
+	        font-size: 3em;
+            font-family: "Century Gothic";
+            border-radius: 10px;
+            opacity: 90%;
+              color: black;
+          }
+
+.teclado {
+            height: 390px;
+            width: 320px;
+            background-color: rgb(136, 130, 130);
+            padding: 10px;
+            border: 3px solid black;
+            margin-bottom: 18px;  
+            transform: translate(84%, 1%);
+            font-family: "Century Gothic";
+            border-radius: 10px;
+            opacity: 90%;
+            color: black;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    font-size: 150%;
+    margin-bottom: 7px;
+    transform: translate(0%, 25%);
+    border: 2px solid black;
+    font-size: 1.5em;
+    background-color: lightgreen;
+    font-family: "Century Gothic";
+    border-radius: 10px;
+}
+
+table {
+	text-align: inherit;
+	width: inherit;
+}
+td {
+	text-align: center;
+}
